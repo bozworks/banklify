@@ -1,0 +1,16 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="arrow-down">
+    <path d="M12 5v14m7-7l-7 7-7-7"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="bank-logos">
+    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4m4-5l5 5 5-5m-5 5V3"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="download">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M12 16v-4m0-4h.01"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="info">
+    <circle cx="11" cy="11" r="8"></circle>
+    <path d="M21 21l-4.35-4.35"></path>
+  </symbol>
+</svg>

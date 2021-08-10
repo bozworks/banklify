@@ -1,0 +1,334 @@
+body,
+.bg-body
+{
+	background-color: #f6f8fa;
+}
+
+header
+{
+	padding: 1rem 1.5rem;
+}
+
+.form-control-color {
+	max-width: 3rem;
+  height: auto; // Override fixed browser height
+  padding: $input-padding-y;
+
+  &:not(:disabled):not([readonly]) {
+  	cursor: pointer;
+  }
+
+  &::-moz-color-swatch {
+  	height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+  	@include border-radius($input-border-radius);
+  }
+
+  &::-webkit-color-swatch {
+  	height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+  	@include border-radius($input-border-radius);
+  }
+}
+
+.aside-wrapper
+{
+	@include media-breakpoint-up(md)
+	{
+		max-width: 320px;
+	}
+
+	@include media-breakpoint-up(lg)
+	{
+		max-width: 400px;
+	}
+}
+
+.text-noverified
+{
+	color: rgba($dark, .2);	
+}
+
+.cursor-pointer
+{
+	cursor: pointer;
+}
+
+.has-icon
+{
+	display: flex;
+	align-items: center;
+}
+
+.ui-shadow
+{
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06) !important;
+}
+
+.search-bar
+{
+	position: relative;
+
+	.search-bar-icon
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 13px;
+		color: $gray-600;
+		pointer-events: none;
+	}
+
+	input
+	{
+		font-size: 1rem !important;
+		padding: .8125rem 1rem .8125rem 50px;
+		height: auto !important;
+	}
+}
+
+%focus-ui-shadow
+{
+	box-shadow: 0 0 0 3px $primary !important;
+}
+
+.input-custom
+{
+	&:focus
+	{
+		@extend %focus-ui-shadow;
+	}
+}
+
+.btn-custom
+{
+	padding: .75rem 1.25rem;
+	border-radius: 7px !important;
+
+	&:active
+	{
+		transform: translateY(1px);
+	}
+
+	&:focus
+	{
+		box-shadow: none !important;
+	}
+}
+
+.letter-spacing-n1
+{
+	letter-spacing: -.5px;
+}
+
+.letter-spacing-n2
+{
+	letter-spacing: -1px;
+}
+
+.font-weight-500
+{
+	font-weight: 500 !important;
+}
+
+.mnh-140px
+{
+	min-height: 140px;
+}
+
+.focus\:ui-shadow:focus
+{
+	@extend %focus-ui-shadow;
+	outline: none;
+}
+
+.element
+{
+	transition: filter .5s .25s;
+
+	img,
+	svg
+	{
+		visibility: hidden;
+		width: 100% !important;
+		height: auto !important;
+
+		&.loaded
+		{
+			visibility: visible;
+		}
+	}
+
+	&:not(.loaded)
+	{
+		img,
+		svg
+		{
+			visibility: hidden;
+		}
+
+		opacity: .5;
+		background: url('../icon/banklify.svg') no-repeat center calc(100% - 50px + 1.2rem);
+		background-size: 50px;
+		filter: grayscale(1);
+	}
+}
+
+.type
+{
+	position: absolute;
+	right: 0;
+	top: .5rem;
+	padding: 2px 8px;
+	font-size: 75%;
+	background: rgba($dark, .055);
+	border-radius: $border-radius 0 0 $border-radius;
+	max-width: 80%;
+
+	@extend .text-truncate;
+}
+
+.is-verified
+{
+	position: absolute;
+	left: .75rem;
+	top: .75rem;
+	color: rgba($dark, .2);
+
+	&[title="Verified"],
+	&[title="Doğrulandı"]
+	{
+		color: $primary;
+	}
+}
+
+html
+{
+	&[lang*="en"]
+	{
+		.badge-lngEN
+		{
+			background-color: $primary;
+		}
+	}
+	&[lang*="tr"]
+	{
+		.badge-lngTR
+		{
+			background-color: $primary;
+		}
+	}
+}
+
+.sort
+{
+	opacity: .5;
+	cursor: pointer;
+
+	&,
+	svg
+	{
+		transition: .3s;
+	}
+
+	svg
+	{
+		transform: rotate(-135deg);
+	}
+
+	&.desc
+	{
+		svg
+		{
+			transform: rotate(540deg);
+		}
+	}
+
+	&.asc
+	{
+		svg
+		{
+			transform: rotate(0deg);
+		}
+	}
+
+	&.asc,
+	&.desc
+	{
+		opacity: 1;
+	}
+}
+
+
+.language-message
+{
+	&.detected-tr
+	{
+		.lm-tr
+		{
+			display: flex !important;
+		}
+	}
+	&.detected-en
+	{
+		.lm-en
+		{
+			display: flex !important;
+		}
+	}
+}
+
+
+.pagination
+{
+	list-style: none;
+	display: inline-flex;
+	padding: .75rem;
+	// margin: 1rem -5px;
+	margin: 0;
+	background: $white;
+	border-radius: $border-radius;
+
+	@extend .ui-shadow;
+
+	li
+	{
+		padding: 0 4px;
+		font-weight: 500;
+
+		a
+		{
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding: 1px 10px;
+			color: $dark;
+			background: rgba($dark, .055);
+
+			&:hover,
+			&:focus
+			{
+				text-decoration: none;
+				background: rgba($dark, .0822);
+			}
+
+			border-radius: $border-radius;
+		}
+
+		&.active
+		{
+			a
+			{
+				color: $white;
+				background: $dark;
+			}
+		}
+
+		&.disabled
+		{
+			a
+			{
+				background: transparent;
+				color: $text-muted;
+			}
+		}
+	}
+}
