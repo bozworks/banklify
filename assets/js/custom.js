@@ -771,7 +771,7 @@ var resources = {
 				title: "Customize",
 				madeBy: "Made by @bozworks",
 				termsMessage: 'This is a non-profit project. The validity of the logos is not guaranteed and may be removed without notice at the request of the relevant organizations. We recommend that you review the organizations\' policies before using logos.',
-				organizationMessage: 'is licensed under the <a href="//github.com/bozworks/banklify/blob/main/LICENSE" class="font-weight-500" target="_blank">MIT License</a>.',
+				organizationMessage: 'is licensed under the <a href="//github.com/bozworks/banklify/blob/master/LICENSE" class="font-weight-500" target="_blank">MIT License</a>.',
 			},
 			specifications: {
 				verified: "Verified by the organization",
@@ -811,7 +811,7 @@ var resources = {
 				title: "Özelleştir",
 				madeBy: "@bozworks iştirakıdır",
 				termsMessage: 'Bu kar amacı gütmeyen bir projedir. Logoların geçerliliği garanti edilmez ve ilgili kuruluşların talebi üzerine haber verilmeksizin kaldırılabilir. Logoları kullanmadan önce kuruluşların politikalarını incelemenizi öneririz.',
-				organizationMessage: '<a href="//github.com/bozworks/banklify/blob/main/LICENSE" class="font-weight-500" target="_blank">MIT Lisansı</a> altında lisanslanmıştır.',
+				organizationMessage: '<a href="//github.com/bozworks/banklify/blob/master/LICENSE" class="font-weight-500" target="_blank">MIT Lisansı</a> altında lisanslanmıştır.',
 			},
 			specifications: {
 				verified: "Organizasyon tarafından doğrulandı",
