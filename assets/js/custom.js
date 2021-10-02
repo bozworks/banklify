@@ -684,8 +684,8 @@ document.addEventListener('DOMContentLoaded', function(){
   	'data.type.i18n': 'globals.bank',
   	'data.logo.src': 'logos/banks/vakifbank.svg',
   	'data.logo.title': 'Vakıfbank Logo',
-  	'data.verified.title': 'Verified',
-  	'data.verified.i18n': '[title]globals.verified'
+  	'data.verified.title': 'Not verified',
+  	'data.verified.i18n': '[title]globals.notVerified'
   },
   {
   	'data.self.name': 'Vakıf Katılım',
