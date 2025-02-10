@@ -143,18 +143,29 @@ function grounds()
 grounds();
 
 window.addEventListener('load', function(){
-	document.getElementById('bank-list-constructor').addEventListener('DOMSubtreeModified', function(){
-		imgs();
-	});
+	const targetNode = document.getElementById("bank-list-constructor");
+	var config = { childList: true, subtree: true };
+	var callback = function (mutationsList) {
+	  for (var mutation of mutationsList) {
+		  imgs();
+	  }
+	};
+	const observer = new MutationObserver(callback);
+	observer.observe(targetNode, config);
 	imgs();
 });
 
 document.addEventListener('DOMContentLoaded', function(){
 
-	document.getElementById('bank-list-constructor').addEventListener('DOMSubtreeModified', function(){
-		sizes();
-	});
-
+	const targetNode = document.getElementById("bank-list-constructor");
+	var config = { childList: true, subtree: true };
+	var callback = function (mutationsList) {
+	  for (var mutation of mutationsList) {
+		  sizes();
+	  }
+	};
+	const observer = new MutationObserver(callback);
+	observer.observe(targetNode, config);
 	sizes();
 
   document.addEventListener('click', function(event){
@@ -893,9 +904,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	stLng();
 
-	document.getElementById('bank-list-constructor').addEventListener('DOMSubtreeModified', function(){
-		stLng();
-	});	
+	const targetNode = document.getElementById("bank-list-constructor");
+	var config = { childList: true, subtree: true };
+	var callback = function (mutationsList) {
+	  for (var mutation of mutationsList) {
+		  stLng();
+	  }
+	};
+	const observer = new MutationObserver(callback);
+	observer.observe(targetNode, config);
 
 	function nxLng(lng)
 	{
