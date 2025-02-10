@@ -780,7 +780,7 @@ var resources = {
 			},
 			aside: {
 				title: "Customize",
-				madeBy: "Made by @bozworks",
+				madeBy: "Made by @bozdev",
 				termsMessage: 'This is a non-profit project. The validity of the logos is not guaranteed and may be removed without notice at the request of the relevant organizations. We recommend that you review the organizations\' policies before using logos.',
 				organizationMessage: 'is licensed under the <a href="//github.com/bozworks/banklify/blob/master/LICENSE" class="font-weight-500" target="_blank">MIT License</a>.',
 			},
@@ -820,7 +820,7 @@ var resources = {
 			},
 			aside: {
 				title: "Özelleştir",
-				madeBy: "@bozworks iştirakıdır",
+				madeBy: "@bozdev iştirakıdır",
 				termsMessage: 'Bu kar amacı gütmeyen bir projedir. Logoların geçerliliği garanti edilmez ve ilgili kuruluşların talebi üzerine haber verilmeksizin kaldırılabilir. Logoları kullanmadan önce kuruluşların politikalarını incelemenizi öneririz.',
 				organizationMessage: '<a href="//github.com/bozworks/banklify/blob/master/LICENSE" class="font-weight-500" target="_blank">MIT Lisansı</a> altında lisanslanmıştır.',
 			},
